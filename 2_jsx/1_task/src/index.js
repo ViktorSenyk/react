@@ -4,20 +4,18 @@ import './index.css';
 
 const rootElem = document.querySelector('#root');
 
-const secondsRender = () => {
-  const currentSecond = new Date().getSeconds();
-  const secondsElem = (
-    <div
-      className="seconds"
-      style={{
-        color: currentSecond % 2 === 0 ? '#fff' : '#000',
-        backgroundColor: currentSecond % 2 !== 0 ? '#fff' : '#000',
-      }}
-    >
-      {currentSecond}
-    </div>
-  );
-  ReactDOM.render(secondsElem, rootElem);
-};
 
-setInterval(() => secondsRender(), 1000);
+const todoElems = (
+  <>
+    <h1 className="title">Todo List</h1>
+    <main className="todo-list">
+      <div className="actions">
+        <input className="task-input" type="text" />
+        <button className="btn create-task-btn">Create</button>
+      </div>
+      <ul className="list"></ul>
+    </main>
+  </>
+);
+  ReactDOM.render(todoElems, rootElem);
+
