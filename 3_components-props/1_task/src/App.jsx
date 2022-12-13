@@ -5,7 +5,7 @@ const App = () => (
   <Greeting
     firstName="John"
     lastName="Due"
-    birthDate={new Date().getFullYear() - new Date('1995').getFullYear()}
+    birthDate={new Date().getFullYear() - new Date('2005').getFullYear()}
   />
 );
 
