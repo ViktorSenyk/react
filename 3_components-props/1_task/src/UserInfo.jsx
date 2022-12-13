@@ -4,7 +4,7 @@ import './userInfo.scss'
 
 export default (props) => (
   <div className="user-info">
-    <UserAvatar avatarUrl={props.avatarUrl} name={props.name} />
-    <div className="user-info__name">{props.name}</div>
+    <UserAvatar avatarUrl={props.user.avatarUrl} name={props.user.name} />
+    <div className="user-info__name">{props.user.name}</div>
   </div>
 );

@@ -8,7 +8,7 @@ const userInfo = {
 };
 
 const App = () => (
-  <Comment user={userInfo} text="Good job!" date="2019-01-01T11:32:19.566Z" />
+  <Comment author={userInfo} text="Good job!" date="2019-01-01T11:32:19.566Z" />
 );
 
 export default App;
