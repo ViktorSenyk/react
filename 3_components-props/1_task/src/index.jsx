@@ -9,7 +9,7 @@ ReactDOM.render(
   <Greeting
     firstName="John"
     lastName="Due"
-    birthDate={new Date('1995')}
+    birthDate={new Date('2005')}
   />,
   rootElem
 );
