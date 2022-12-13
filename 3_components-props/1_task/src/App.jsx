@@ -1,14 +1,12 @@
 import React from 'react';
-import Comment from './Comment';
-
-const userInfo = {
-  name: 'Tom',
-  avatarUrl:
-    'https://img.favpng.com/14/3/22/stock-photography-computer-icons-user-png-favpng-TWgLj8kmcdnekcpWySfpV97h3.jpg',
-};
+import Greeting from './Greeting';
 
 const App = () => (
-  <Comment author={userInfo} text="Good job!" date="2019-01-01T11:32:19.566Z" />
+  <Greeting
+    firstName="John"
+    lastName="Due"
+    birthDate={new Date().getFullYear() - new Date('1995').getFullYear()}
+  />
 );
 
 export default App;
