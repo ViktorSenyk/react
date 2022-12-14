@@ -30,7 +30,7 @@ class Clock extends Component {
       <div className="clock">
         <div className="clock__location">{this.props.location}</div>
         <div className="clock__time">{`${moment(this.state.time).format(
-          'h:hh:ss a'
+          'h:mm:ss a'
         )}`}</div>
       </div>
     );
