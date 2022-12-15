@@ -1,10 +1,10 @@
 import React from 'react';
-import Toggler from './Toggler';
+import ColorPicker from './ColorPicker';
 
 function App() {
   return (
     <>
-      <Toggler />
+      <ColorPicker />
     </>
   );
 }
