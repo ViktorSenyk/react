@@ -1,10 +1,10 @@
 import React from 'react';
-import GoodButton from './GoodButton';
+import Counter from './Counter';
 
 function App() {
   return (
     <>
-      <GoodButton />
+      <Counter />
     </>
   );
 }
