@@ -1,10 +1,10 @@
 import React from 'react';
-import Colors from './Colors';
+import Toggler from './Toggler';
 
 function App() {
   return (
     <>
-      <Colors />
+      <Toggler />
     </>
   );
 }
