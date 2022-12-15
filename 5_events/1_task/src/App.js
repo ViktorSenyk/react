@@ -1,10 +1,10 @@
 import React from 'react';
-import Counter from './Counter';
+import Colors from './Colors';
 
 function App() {
   return (
     <>
-      <Counter />
+      <Colors />
     </>
   );
 }
