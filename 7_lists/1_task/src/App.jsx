@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import NumbersList from './NumbersList';
+import UsersList from './UsersList';
+import users from './users';
 
 export default class App extends Component {
   render = () => (
     <>
-      <NumbersList numbers={[1, 2, 3, 4, 5]} />
+      <UsersList users={users} />
     </>
   );
 }
