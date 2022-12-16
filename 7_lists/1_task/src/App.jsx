@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import UsersList from './UsersList';
-import users from './users';
+import TransactionsList from './TransactionsList';
+import transactions from './transactions';
+
 
 export default class App extends Component {
   render = () => (
     <>
-      <UsersList users={users} />
+      <TransactionsList transactions={transactions} />
     </>
   );
 }
