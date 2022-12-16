@@ -20,7 +20,9 @@ export default class UsersList extends Component {
 
     return (
       <>
-        <button className="btn" onClick={this.setSort}></button>
+        <button className="btn" onClick={this.setSort}>
+          {!this.state.sort ? '-' : this.state.sort}
+        </button>
         <ul className="users">
           {sortList.map(({ id, age, name }) => (
             <User key={id} age={age} name={name} />
