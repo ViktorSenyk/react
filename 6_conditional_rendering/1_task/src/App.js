@@ -1,12 +1,8 @@
 import React from 'react';
-import Auth from './Auth';
+import Mailbox from './Mailbox';
 
 function App() {
-  return (
-    <>
-      <Auth />
-    </>
-  );
+  return <><Mailbox unreadMessages={[]} /></>;
 }
 
 export default App;
