@@ -12,9 +12,25 @@ export default class Page extends Component {
     <div className="page">
       <Info info={this.state.info} />
       <div className="actions">
-        <button className="btn" onClick={() => this.setInfo('Price is 500$. Available in 2 colors')}>IPhone 13</button>
-        <button className="btn" onClick={() => this.setInfo('Price is 650$. Not available in 1 color')}>IPhone 13 Pro</button>
-        <button className="btn" onClick={() => this.setInfo('')}>Clear</button>
+        <button
+          className="btn"
+          onClick={() =>
+            this.setInfo('Iphone 13 - Price is 500$. Available in 2 colors')
+          }
+        >
+          IPhone 13
+        </button>
+        <button
+          className="btn"
+          onClick={() =>
+            this.setInfo('Iphone 13 - Price is 650$. Not available')
+          }
+        >
+          IPhone 13 Pro
+        </button>
+        <button className="btn" onClick={() => this.setInfo('')}>
+          Clear
+        </button>
       </div>
     </div>
   );
