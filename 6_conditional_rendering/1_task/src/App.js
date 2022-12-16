@@ -1,10 +1,10 @@
 import React from 'react';
-import Page from './Page';
+import Status from './Status';
 
 function App() {
   return (
     <>
-      <Page />
+      <Status isOnline={false} />
     </>
   );
 }
