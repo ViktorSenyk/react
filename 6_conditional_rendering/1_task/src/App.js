@@ -1,8 +1,12 @@
 import React from 'react';
-import Mailbox from './Mailbox';
+import Page from './Page';
 
 function App() {
-  return <><Mailbox unreadMessages={[]} /></>;
+  return (
+    <>
+      <Page />
+    </>
+  );
 }
 
 export default App;
