@@ -15,7 +15,8 @@ export default class Page extends Component {
         <button
           className="btn"
           onClick={() =>
-            this.setInfo('Iphone 13 - Price is 500$. Available in 2 colors')
+            // this.setInfo('Iphone 13 - Price is 500$. Available in 2 colors')
+            this.setInfo('Price is 500$. Available in 2 colors')
           }
         >
           IPhone 13
@@ -23,7 +24,8 @@ export default class Page extends Component {
         <button
           className="btn"
           onClick={() =>
-            this.setInfo('Iphone 13 - Price is 650$. Not available')
+            // this.setInfo('Iphone 13 - Price is 650$. Not available')
+            this.setInfo('Price is 650$. Not available in 1 color')
           }
         >
           IPhone 13 Pro
