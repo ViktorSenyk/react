@@ -3,7 +3,7 @@ import moment from 'moment';
 
 export default class Clock extends Component {
   state = {
-    time: new Date(),
+    time: null,
   };
 
   componentDidMount() {

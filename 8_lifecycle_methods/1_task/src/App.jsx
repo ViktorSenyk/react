@@ -16,7 +16,7 @@ export default class App extends Component {
         <>
           <Clock location="London" offset={0} />
           <Clock location="Kyiv" offset={2} />
-          <Clock location="New Yerk" offset={-5} />
+          <Clock location="New York" offset={-5} />
         </>
       )}
     </>
