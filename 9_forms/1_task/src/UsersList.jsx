@@ -5,7 +5,7 @@ import User from './User';
 export default class UsersList extends Component {
   state = {
     users: this.props.users,
-    testText: 'o',
+    testText: '',
   };
 
   onChanger = (text) =>

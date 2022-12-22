@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export default class Filter extends Component {
-  componentDidMount = () => this.props.onChange(this.props.filterText);
+//   componentDidMount = () => this.props.onChange(this.props.filterText);
 
   render = () => (
     <div className="filter">
