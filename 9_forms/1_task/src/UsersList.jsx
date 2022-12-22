@@ -16,7 +16,7 @@ export default class UsersList extends Component {
 
   render = () => (
     <>
-      <Filter count={this.state.users.length} onChange={this.onChanger} />
+      <Filter filterText='o' count={this.state.users.length} onChange={this.onChanger} />
       <ul className="users">
         {this.state.users.map((user) => (
           <User key={user.id} {...user} />

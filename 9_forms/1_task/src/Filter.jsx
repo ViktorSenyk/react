@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 export default class Filter extends Component {
   state = {
-    filterText: '',
+    filterText: this.props.filterText,
   };
+
+  componentDidMount = () => this.props.onChange(this.state.filterText);
 
   onChanger = (e) => this.setState({ filterText: e.target.value });
 
