@@ -5,23 +5,23 @@ import User from './User';
 export default class UsersList extends Component {
   state = {
     users: this.props.users,
-    testText: '',
+    filterText: '',
   };
 
-  onChanger = (text) =>
+  onChange = (text) =>
     this.setState({
       users: this.props.users.filter((user) =>
         user.name.toLowerCase().includes(text.toLowerCase())
       ),
-      testText: text,
+      filterText: text,
     });
 
   render = () => (
     <>
       <Filter
-        filterText={this.state.testText}
+        filterText={this.state.filterText}
         count={this.state.users.length}
-        onChange={this.onChanger}
+        onChange={this.onChange}
       />
       <ul className="users">
         {this.state.users.map((user) => (
