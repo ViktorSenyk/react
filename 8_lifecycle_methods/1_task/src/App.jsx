@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import User from './User';
-
+import ConnectionStatus from './ConnectionStatus';
 
 export default class App extends Component {
-  render = () => <><User userId={'Git'} /></>;
+  render = () => (
+    <>
+      <ConnectionStatus />
+    </>
+  );
 }
