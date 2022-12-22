@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 
 export default class Filter extends Component {
-  state = {
-    filterText: this.props.filterText,
-  };
-
-  componentDidMount = () => this.props.onChange(this.state.filterText);
-
-  onChanger = (e) => this.setState({ filterText: e.target.value });
+//   componentDidMount = () => this.props.onChange(this.props.filterText);
 
   render = () => (
     <div className="filter">
@@ -15,11 +9,8 @@ export default class Filter extends Component {
       <input
         type="text"
         className="filter__input"
-        value={this.state.filterText}
-        onChange={(e) => {
-          this.onChanger(e);
-          this.props.onChange(e.target.value);
-        }}
+        // value={this.props.filterText}
+        onChange={(e) => this.props.onChange(e.target.value)}
       />
     </div>
   );
