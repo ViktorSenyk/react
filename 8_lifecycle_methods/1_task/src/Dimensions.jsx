@@ -14,7 +14,7 @@ export default class Dimensions extends Component {
     window.removeEventListener('resize', this.onResizeSet);
 
   onResizeSet = () => {
-    document.title = `${this.state.screenWidth}px - ${this.state.screenHeight}px`;
+    document.title = `${this.state.screenWidth} - ${this.state.screenHeight}`;
     this.setState({
       screenWidth: window.innerWidth,
       screenHeight: window.innerHeight,
