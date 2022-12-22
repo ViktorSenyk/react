@@ -5,6 +5,7 @@ import User from './User';
 export default class UsersList extends Component {
   state = {
     users: this.props.users,
+    testText: 'o',
   };
 
   onChanger = (text) =>
@@ -12,12 +13,13 @@ export default class UsersList extends Component {
       users: this.props.users.filter((user) =>
         user.name.toLowerCase().includes(text.toLowerCase())
       ),
+      testText: text,
     });
 
   render = () => (
     <>
       <Filter
-        filterText="o"
+        filterText={this.state.testText}
         count={this.state.users.length}
         onChange={this.onChanger}
       />
