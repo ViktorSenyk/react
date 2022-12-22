@@ -7,7 +7,7 @@ export default class Dimensions extends Component {
   };
 
   componentDidMount = () => {
-    document.title = `${this.state.screenWidth} - ${this.state.screenHeight}`;
+    document.title = `${this.state.screenWidth} x ${this.state.screenHeight}`;
 
     window.addEventListener('resize', this.onResizeSet);
   };
@@ -16,7 +16,7 @@ export default class Dimensions extends Component {
     window.removeEventListener('resize', this.onResizeSet);
 
   onResizeSet = () => {
-    document.title = `${this.state.screenWidth} - ${this.state.screenHeight}`;
+    document.title = `${this.state.screenWidth} x ${this.state.screenHeight}`;
     this.setState({
       screenWidth: window.innerWidth,
       screenHeight: window.innerHeight,
