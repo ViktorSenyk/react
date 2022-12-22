@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Search from './Search';
+import UserForm from './UserForm';
 
 export default class App extends Component {
+  createUser = (userObj) => console.log(userObj);
+
   render = () => (
     <>
-      <Search />
+      <UserForm onSubmit={this.createUser} />
     </>
   );
 }
