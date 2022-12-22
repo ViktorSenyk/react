@@ -1,28 +1,18 @@
 import React, { Component } from 'react';
 
 export default class UserForm extends Component {
-  // state = {
-  //   name: '',
-  //   student: false,
-  //   occupation: '',
-  //   about: '',
-  // };
-
-  // onChanger = (e) =>
-  //   this.setState({
-  //     [e.target.name]:
-  //       e.target.type === 'checkbox' ? e.target.checked : e.target.value,
-  //   });
-
   setRef = (node) => (this.formRef = node);
 
   render = () => (
     <form
       className="login-form"
       ref={this.setRef}
-      onSubmit={(e) => {
-        const formData = [...new FormData(this.formRef)].reduce((acc, [name, value]) => ({...acc, [name]: value}), {})
-        this.props.onSubmit(e, formData);
+      onSubmit={() => {
+        const formData = [...new FormData(this.formRef)].reduce(
+          (acc, [name, value]) => ({ ...acc, [name]: value }),
+          {}
+        );
+        this.props.onSubmit(formData);
       }}
     >
       <h1 className="form-title">Profile</h1>

@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import UserForm from './UserForm';
 
 export default class App extends Component {
-  createUser = (e, userObj) => {
-    e.preventDefault();
-    console.log(userObj);
-  };
+  createUser = (userObj) => console.log(userObj);
 
   render = () => (
     <>
