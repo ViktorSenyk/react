@@ -7,6 +7,8 @@ export default class Dimensions extends Component {
   };
 
   componentDidMount = () => {
+    document.title = `${this.state.screenWidth} - ${this.state.screenHeight}`;
+
     window.addEventListener('resize', this.onResizeSet);
   };
 
