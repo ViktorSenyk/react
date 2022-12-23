@@ -8,12 +8,12 @@ export default class UsersList extends Component {
     filterText: '',
   };
 
-  onChange = (text) =>
+  onChange = (e) =>
     this.setState({
       users: this.props.users.filter((user) =>
-        user.name.toLowerCase().includes(text.toLowerCase())
+        user.name.toLowerCase().includes(e.target.value.toLowerCase())
       ),
-      filterText: text,
+      filterText: e.target.value,
     });
 
   render = () => (

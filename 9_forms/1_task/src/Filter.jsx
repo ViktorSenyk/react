@@ -8,7 +8,7 @@ export default class Filter extends Component {
         type="text"
         className="filter__input"
         value={this.props.filterText}
-        onChange={(e) => this.props.onChange(e.target.value)}
+        onChange={this.props.onChange}
       />
     </div>
   );
