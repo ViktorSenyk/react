@@ -13,9 +13,9 @@ export default class Expand extends Component {
           ></i>
         </button>
       </div>
-      {!this.props.isOpen ? null : (
-        <div className="expand__content">{this.props.children}</div>
-      )}
+      <div className="expand__content">
+        {!this.props.isOpen ? null : this.props.children}
+      </div>
     </div>
   );
 }
