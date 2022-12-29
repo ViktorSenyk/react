@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import EvenNumbers from './EvenNumbers';
-import Numbers from './Numbers';
-import OddNumbers from './OddNumbers';
+import Dialog from './Dialog';
 
 export default class App extends Component {
-  state = {
-    title: 'All numbers',
-    number: 0,
-  };
+  state = { isOpen: false };
 
-  componentDidMount = () =>
-    (this.intervalId = setInterval(
-      () => this.setState({ number: this.state.number + 1 }),
-      1000
-    ));
-  componentWillUnmount = () => clearInterval(this.intervalId);
+  toggle = () => this.setState({ isOpen: !this.state.isOpen });
 
   render = () => (
-    <>
-      <Numbers title={this.state.title} number={this.state.number} />
-      <EvenNumbers number={this.state.number} />
-      <OddNumbers number={this.state.number} />
-    </>
+    <div className="app">
+      <button className="btn" onClick={this.toggle}>
+        Show dialog
+      </button>
+      <Dialog
+        title="Recommendation"
+        isOpen={this.state.isOpen}
+        onClose={this.toggle}
+      >
+        <p>
+          Use immutable array methods to work with data. It will help to avoid
+          bugs
+        </p>
+      </Dialog>
+    </div>
   );
 }
