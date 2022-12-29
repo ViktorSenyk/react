@@ -2,17 +2,11 @@ import React, { Component } from 'react';
 import Expand from './Expand';
 
 export default class App extends Component {
-  state = {
-    isOpen: false,
-  };
 
-  toggle = () => this.setState({ isOpen: !this.state.isOpen });
 
   render = () => (
     <>
       <Expand
-        isOpen={this.state.isOpen}
-        toggle={this.toggle}
         title="Some title"
       >
         <p>
