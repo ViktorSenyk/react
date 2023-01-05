@@ -1,0 +1,29 @@
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Contacts from './Contacts';
+import Home from './Home';
+import PageNotFound from './PageNotFound';
+import Products from './Products';
+
+export default class App extends Component {
+  render = () => (
+    <div className="page">
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/products">
+            <Products />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
+          </Route>
+          <Route path="/#">
+            <PageNotFound />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+}
