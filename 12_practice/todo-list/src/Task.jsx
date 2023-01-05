@@ -22,7 +22,7 @@ export default class Task extends Component {
 Task.propTypes = {
   text: PropTypes.string,
   done: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   setDone: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
 };
