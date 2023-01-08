@@ -19,7 +19,7 @@ export default class App extends Component {
           <Route path="/contacts">
             <Contacts />
           </Route>
-          <Route path="/#">
+          <Route path="*">
             <PageNotFound />
           </Route>
         </Switch>
