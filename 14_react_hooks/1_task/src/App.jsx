@@ -1,6 +1,6 @@
 import React from 'react';
-import Dimensions from './Dimensions';
+import ConnectionStatus from './ConnectionStatus';
 
 export default function App() {
-  return <Dimensions />;
+  return <ConnectionStatus />;
 }
