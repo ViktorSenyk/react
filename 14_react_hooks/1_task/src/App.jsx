@@ -1,6 +1,6 @@
 import React from 'react';
-import Dimension from './Dimensions';
+import Dimensions from './Dimensions';
 
 export default function App() {
-  return <Dimension />;
+  return <Dimensions />;
 }
