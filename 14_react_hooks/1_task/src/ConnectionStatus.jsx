@@ -14,7 +14,7 @@ export default function ConnectionStatus() {
   }, []);
   return (
     <div className={`status ${!online && 'status_offline'}`}>
-      {online ? 'Online' : 'Offline'}
+      {online ? 'online' : 'offline'}
     </div>
   );
 }
