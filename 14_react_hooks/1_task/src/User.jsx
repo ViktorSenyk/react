@@ -14,7 +14,7 @@ export default function User() {
         throw new Error('Network Error!');
       })
       .then((data) => setUserData(data));
-  });
+  }, [userId]);
 
   if (!userData) {
     return null;
