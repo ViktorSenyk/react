@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Dimensions() {
+export default function Dimension() {
   const [size, setSize] = useState({ width: null, height: null });
 
   useEffect(() => {
