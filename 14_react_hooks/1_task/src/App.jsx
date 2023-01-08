@@ -1,31 +1,6 @@
 import React from 'react';
-import User from './User';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import Dimensions from './Dimensions';
 
 export default function App() {
-  return (
-    <div className="page">
-      <BrowserRouter>
-        <div className="page__content">
-          <h1>Users</h1>
-          <ul className="navigation">
-            <li className="navigation__item">
-              <Link to="/users/github">Github</Link>
-            </li>
-            <li className="navigation__item">
-              <Link to="/users/facebook">Facebook</Link>
-            </li>
-          </ul>
-          <Switch>
-            <Route exact path="/">
-              <span>Select a user please</span>
-            </Route>
-            <Route path="/users/:userId">
-              <User />
-            </Route>
-          </Switch>
-        </div>
-      </BrowserRouter>
-    </div>
-  );
+  return <Dimensions />;
 }
